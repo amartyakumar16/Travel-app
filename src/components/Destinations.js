@@ -61,5 +61,4 @@ const TopDestinations = () => {
     </div>
   );
 };
-
 export default TopDestinations;

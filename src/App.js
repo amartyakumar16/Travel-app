@@ -7,6 +7,8 @@ import SignIn from './pages/SignIn';
 import Destinations from './pages/Destinations';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import TopDestinations from "./components/Destinations";
+import JaipurPage from "./pages/JaipurPage";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/" element={<Home />} />
           <Route path="/signin" element={<SignIn />} />
+          <Route path="/" element={<TopDestinations />} />
+          <Route path="/jaipur" element={<JaipurPage />} />
         </Routes>
 
         <Footer />

@@ -1,46 +1,56 @@
 import React from "react";
+import "./JaipurPage.css";
+
+import firstTimersImg from "../assets/images/1st.jpeg";
+import artCultureImg from "../assets/images/pexels-photo-91217.webp";
+import historyImg from "../assets/images/3rd.jpeg";
+import couplesImg from "../assets/images/4th.jpeg";
 
 const JaipurPage = () => {
   const categories = [
-    "First-timers",
-    "Art & Culture Lovers",
-    "History Geeks",
-    "Couples",
+    {
+      title: "First-timers",
+      image: firstTimersImg,
+    },
+    {
+      title: "Art & Culture Lovers",
+      image: artCultureImg,
+    },
+    {
+      title: "History Geeks",
+      image: historyImg,
+    },
+    {
+      title: "Couples",
+      image: couplesImg,
+    },
   ];
 
   return (
-    <div style={{ padding: "40px", fontFamily: "Arial, sans-serif" }}>
+    <div className="jaipur-container">
       {/* Section 1 */}
-      <h1 style={{ fontSize: "32px", fontWeight: "bold", marginBottom: "20px" }}>
-        Discover the best things to do in Jaipur
-      </h1>
+      <h1 className="jaipur-heading">Discover the best things to do in Jaipur</h1>
 
       {/* Section 2 */}
-      <div style={{ marginBottom: "30px" }}>
-        <h2 style={{ fontSize: "24px", marginBottom: "10px" }}>
-          Top things to do in jaipur
-        </h2>
-        <p style={{ color: "#555" }}>
+      <div className="jaipur-section">
+        <h2 className="jaipur-subheading">Top things to do in Jaipur</h2>
+        <p className="jaipur-text">
           Even in Jaipur, people are curious to compare world experiences. Here's what travelers loved doing in New York.
         </p>
       </div>
 
       {/* Section 3 */}
-      <div style={{ marginBottom: "30px" }}>
-        <h2 style={{ fontSize: "24px", marginBottom: "10px" }}>Jaipur, your way…</h2>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}>
+      <div className="jaipur-section">
+        <h2 className="jaipur-subheading">Jaipur, your way…</h2>
+        <div className="category-container">
           {categories.map((category, index) => (
-            <div
-              key={index}
-              style={{
-                padding: "10px 20px",
-                border: "1px solid #ccc",
-                borderRadius: "20px",
-                backgroundColor: "#f9f9f9",
-                fontSize: "16px",
-              }}
-            >
-              {category}
+            <div key={index} className="category-card">
+              <img
+                src={category.image}
+                alt={category.title}
+                className="category-img"
+              />
+              <div className="category-title">{category.title}</div>
             </div>
           ))}
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./JaipurPage.css";
 
 import firstTimersImg from "../assets/images/1st.jpeg";
@@ -11,27 +12,29 @@ const JaipurPage = () => {
     {
       title: "First-timers",
       image: firstTimersImg,
+      link: "/jaipur/first-timers",
     },
     {
       title: "Art & Culture Lovers",
       image: artCultureImg,
+      link: "/jaipur/art-culture",
     },
     {
       title: "History Geeks",
       image: historyImg,
+      link: "/jaipur/history",
     },
     {
       title: "Couples",
       image: couplesImg,
+      link: "/jaipur/couples",
     },
   ];
 
   return (
     <div className="jaipur-container">
-      {/* Section 1 */}
       <h1 className="jaipur-heading">Discover the best things to do in Jaipur</h1>
 
-      {/* Section 2 */}
       <div className="jaipur-section">
         <h2 className="jaipur-subheading">Top things to do in Jaipur</h2>
         <p className="jaipur-text">
@@ -39,19 +42,18 @@ const JaipurPage = () => {
         </p>
       </div>
 
-      {/* Section 3 */}
       <div className="jaipur-section">
         <h2 className="jaipur-subheading">Jaipur, your way…</h2>
         <div className="category-container">
           {categories.map((category, index) => (
-            <div key={index} className="category-card">
+            <Link to={category.link} key={index} className="category-card">
               <img
                 src={category.image}
                 alt={category.title}
                 className="category-img"
               />
               <div className="category-title">{category.title}</div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

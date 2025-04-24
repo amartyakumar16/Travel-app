@@ -25,6 +25,8 @@ function App() {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/" element={<TopDestinations />} />
           <Route path="/jaipur" element={<JaipurPage />} />
+          <Route path="/" element={<JaipurPage />} />
+        
         </Routes>
 
         <Footer />

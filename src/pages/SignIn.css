@@ -1,72 +1,94 @@
-.signin-container {
-    max-width: 400px;
-    margin: 80px auto;
-    padding: 30px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    background-color: #fff;
-    text-align: center;
-  }
-  
-  .signin-form input {
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  .signin-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #1a1a1a;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .signin-form button:hover {
-    background-color: #333;
-  }
-/* SignIn.css */
-.signin-container {
-  background-image: url('../assets/images/Indiagate1.jpg');
+/* Full page background */
+.page-background {
+  background-image: url('../assets/images/3322.avif');
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  background-repeat: no-repeat;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.signin-form {
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.signin-form input,
-.signin-form button {
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
+/* Container with second background */
+.signin-container {
+  background-image: url('../assets/images/2222.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 90%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1); /* Light glass effect */
+  transition: transform 0.4s ease;
 }
 
+.signin-container:hover {
+  transform: scale(1.02);
+}
+
+/* Form wrapper */
+.signin-form-wrapper {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.signin-form-wrapper h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a202c; /* dark gray */
+  margin-bottom: 0.5rem;
+}
+
+.signin-form-wrapper p {
+  font-size: 1rem;
+  color: #4a5568; /* medium gray */
+  margin-bottom: 1.5rem;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.signin-form input {
+  padding: 0.9rem;
+  border: 1px solid #cbd5e0; /* light gray */
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  background-color: #f7fafc;
+  transition: all 0.3s ease;
+}
+
+.signin-form input:focus {
+  outline: none;
+  border-color: #3b82f6; /* blue-500 */
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.3);
+  background-color: #fff;
+}
+
+/* Button styling */
 .signin-form button {
-  background-color: #000;
-  color: #fff;
+  padding: 1rem;
+  background-color: #3b82f6; /* blue-500 */
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1.1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .signin-form button:hover {
-  background-color: #333;
+  background-color: #2563eb; /* blue-600 */
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(37, 99, 235, 0.4);
 }

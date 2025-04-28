@@ -26,6 +26,7 @@ function App() {
           <Route path="/" element={<TopDestinations />} />
           <Route path="/jaipur" element={<JaipurPage />} />
           <Route path="/" element={<JaipurPage />} />
+    
         
         </Routes>
 

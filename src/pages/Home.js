@@ -1,12 +1,13 @@
 import React from 'react';
-import Hero from '../components/Hero';
 import Destinations from '../components/Destinations';
 import Packages from '../components/Packages';
 import Testimonials from '../components/Testimonials';
 import Blog from '../components/Blog';
 import Contact from '../components/Contact';
+import Recommendations from '../components/Recommendations'; // NEW
 import travelImg from '../assets/images/Kashi1.jpg';
 import './Home.css';
+
 
 const Home = () => {
   return (
@@ -17,9 +18,10 @@ const Home = () => {
         <img src={travelImg} alt="Travel India" className="travel-banner" />
       </div>
 
-      {/* Sections */}
-      <section className="home-hero-section">
-        <Hero />
+      {/* NEW: Recommendations Section */}
+      <section className="home-section home-recommendations">
+        <h2 className="section-title">Headout’s Top Recommendations</h2>
+        <Recommendations />
       </section>
 
       <section className="home-section home-destinations">

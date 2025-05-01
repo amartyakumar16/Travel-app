@@ -1,0 +1,62 @@
+.recommendations-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+  }
+  
+  .recommendation-card {
+    width: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recommendation-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .recommendation-info {
+    padding: 10px;
+  }
+  
+  .recommendation-city {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .recommendation-title {
+    font-size: 16px;
+    margin: 5px 0;
+    font-weight: 600;
+  }
+  
+  .recommendation-rating {
+    color: #e91e63;
+    font-weight: bold;
+  }
+  
+  .reviews {
+    color: #777;
+    font-size: 14px;
+  }
+  
+  .recommendation-price {
+    margin-top: 5px;
+    font-size: 15px;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 5px;
+  }
+  
+  .discount {
+    color: green;
+    font-weight: bold;
+  }
+  

@@ -5,7 +5,7 @@ import Testimonials from '../components/Testimonials';
 import Blog from '../components/Blog';
 import Contact from '../components/Contact';
 import Recommendations from '../components/Recommendations'; // NEW
-import travelImg from '../assets/images/Kashi1.jpg';
+import travelImg from '../assets/images/Manali.avif';
 import './Home.css';
 
 

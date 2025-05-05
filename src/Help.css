@@ -1,0 +1,121 @@
+.help-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .help-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+  }
+  
+  .help-section {
+    margin-bottom: 2rem;
+  }
+
+  .help-section h3 {
+    color: #2980b9;
+    margin-bottom: 0.5rem;
+  }
+  
+  .help-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .help-section li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+  }
+  
+  .help-contact h3 {
+    color: #27ae60;
+  }
+
+
+  .help-contact ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .help-contact li a {
+    display: inline-block;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #e67e22;
+    font-weight: bold;
+  }
+  
+  .help-contact li a:hover {
+    text-decoration: underline;
+  }
+
+
+  .help-container {
+    padding: 40px;
+    background-color: #f9f6ff;
+    text-align: center;
+  }
+  
+  .help-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .booking-form {
+    margin: 30px auto;
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .booking-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  .booking-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .manage-booking-btn {
+    background-color: #8000ff;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .chat-link {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .faq-section {
+    margin-top: 50px;
+  }
+  
+  .faq-search {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  
+  

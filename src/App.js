@@ -9,6 +9,8 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import TopDestinations from "./components/Destinations";
 import JaipurPage from "./pages/JaipurPage";
+import Help from './Help';
+
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
           <Route path="/" element={<TopDestinations />} />
           <Route path="/jaipur" element={<JaipurPage />} />
           <Route path="/" element={<JaipurPage />} />
+          <Route path="/help" element={<Help />} />
     
         
         </Routes>

@@ -10,6 +10,11 @@ import Contact from './pages/Contact';
 import TopDestinations from "./components/Destinations";
 import JaipurPage from "./pages/JaipurPage";
 import Help from './Help';
+  import HawaMahalPage from "./components/HawaMahalPage";
+
+
+
+
 
 
 function App() {
@@ -29,6 +34,11 @@ function App() {
           <Route path="/jaipur" element={<JaipurPage />} />
           <Route path="/" element={<JaipurPage />} />
           <Route path="/help" element={<Help />} />
+          
+        
+
+<Route path="/jaipur/hawa-mahal" element={<HawaMahalPage />} />
+
     
         
         </Routes>

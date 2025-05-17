@@ -1,0 +1,61 @@
+.hawa-mahal-page {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fdf6ee;
+  color: #333;
+}
+
+.hawa-mahal-page h1 {
+  text-align: center;
+  color: #c0392b;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.image-gallery img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.description {
+  max-width: 900px;
+  margin: 3rem auto 0;
+  background-color: #fff9f4;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.description h2 {
+  color: #d35400;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #f39c12;
+  padding-bottom: 0.5rem;
+}
+
+.description ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  line-height: 1.7;
+}
+
+.description li {
+  margin-bottom: 0.5rem;
+}

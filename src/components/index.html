@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matterport MPEmbed Viewer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="mp-container">
+    <iframe
+      id="matterport-tour"
+      src="https://my.matterport.com/show/?m=YOUR_MODEL_ID&play=1&qs=1&ts=1&hr=1&mls=1"
+      frameborder="0"
+      allowfullscreen
+      allow="xr-spatial-tracking; gyroscope; accelerometer"
+    ></iframe>
+    <div id="custom-ui">
+      <h2>Virtual Tour</h2>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

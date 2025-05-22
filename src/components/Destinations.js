@@ -38,9 +38,9 @@ const TopDestinations = () => {
             style={{
               width: "220px",
               textDecoration: "none",
-              color: "inherit",
-            }}
-            target="_blank"
+          color: "inherit",
+        }}
+        target="_blank"
             rel="noopener noreferrer"
           >
             <img

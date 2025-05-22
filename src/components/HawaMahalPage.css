@@ -13,26 +13,36 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.image-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
+/* Carousel container */
+.carousel-container {
+  overflow: hidden; /* hides scrollbars */
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
-.image-gallery img {
+/* Flex row of images */
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Image styling */
+.carousel-track img {
+  flex-shrink: 0;
   width: 100%;
   max-width: 300px;
-  border-radius: 15px;
+  margin: 0 1rem;
+  border-radius: 10px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.image-gallery img:hover {
+.carousel-track img:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
+/* Description block */
 .description {
   max-width: 900px;
   margin: 3rem auto 0;
@@ -59,3 +69,360 @@
 .description li {
   margin-bottom: 0.5rem;
 }
+
+
+
+.carousel-container {
+  overflow-x: scroll;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
+.carousel-track img {
+  height: 300px;
+  width: auto;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.thumbnail-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.thumbnail {
+  height: 60px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.thumbnail:hover {
+  border-color: #ff6600;
+}
+
+.like-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.like-section button {
+  font-size: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.review-section {
+  margin-top: 30px;
+}
+
+.review-section textarea {
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.review-section button {
+  padding: 8px 16px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.hawa-mahal-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.carousel-container {
+  overflow-x: scroll;
+  white-space: nowrap;
+  scrollbar-width: none;
+  margin-bottom: 10px;
+}
+
+.carousel-track img {
+  height: 300px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.thumbnail {
+  height: 60px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.thumbnail:hover {
+  border-color: #ff6600;
+}
+
+.like-section {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.rating-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.star {
+  font-size: 24px;
+  cursor: pointer;
+  color: lightgray;
+}
+
+.filled {
+  color: gold;
+}
+
+.description, .review-section, .info-section, .map-section {
+  margin-top: 30px;
+}
+
+.review-section textarea {
+  width: 100%;
+  height: 80px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.review-section button {
+  padding: 8px 16px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.hawa-mahal-page {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdf6f0;
+}
+
+.carousel-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+}
+
+.carousel-track img {
+  width: 300px;
+  height: 200px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 60px;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+.like-section, .rating-section, .info-section, .map-section, .review-section {
+  margin: 1rem 0;
+}
+
+.star {
+  font-size: 24px;
+  cursor: pointer;
+  color: gray;
+}
+
+.star.filled {
+  color: gold;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  background-color: #ff7e5f;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.hawa-mahal-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #fffaf0;
+}
+
+.carousel-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.carousel-track img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+  border: 2px solid #ff6600;
+}
+
+.like-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.like-section button {
+  background-color: #ff6666;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.like-section span {
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.rating-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.star {
+  font-size: 24px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.filled {
+  color: gold;
+}
+
+.description {
+  margin-bottom: 30px;
+}
+
+.description h2 {
+  margin-bottom: 10px;
+}
+
+.description ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.review-section {
+  margin-bottom: 30px;
+}
+
+.review-section textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  padding: 10px;
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.review-section button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.review-section ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+.info-section {
+  background-color: #f0f8ff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.info-section h3 {
+  margin-bottom: 10px;
+}
+
+.map-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.map-section h3 {
+  margin-bottom: 10px;
+}
+
